@@ -18,6 +18,10 @@ public class SettingActivity extends AppCompatActivity {
     private RelativeLayout icSetting, icMap, icHome;
     private ImageView ivLogout;
 
+    class ApiResponse{
+        boolean success;
+        String message;
+    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -42,5 +46,12 @@ public class SettingActivity extends AppCompatActivity {
             startActivity(new Intent(SettingActivity.this, LoginActivity.class));
         });
     }
-
+    interface ApiRequest{
+        @POST("api/potholescanner/logout")
+        Call<ApiResponse> logoutUser();
+    }
+    class LogoutRequest{
+        String email;
+        String password;
+    }
 }

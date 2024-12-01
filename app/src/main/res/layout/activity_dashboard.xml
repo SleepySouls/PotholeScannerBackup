@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -21,16 +20,13 @@
         android:id="@+id/horizontal_"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_alignParentTop="true"
-        android:layout_below="@+id/banner_logi"
         android:layout_marginTop="20dp"
         android:src="@drawable/dashboard_m">
         <ImageView
             android:id="@+id/user_avatar"
             android:layout_width="48dp"
             android:layout_height="48dp"
-            android:src="@drawable/avatar" android:layout_marginLeft="45dp"/>
+            android:src="@drawable/avatar" android:layout_marginStart="45dp"/>
 
         <TextView
             android:id="@+id/title"
@@ -40,8 +36,8 @@
             android:text="@string/title"
             android:textAppearance="@style/title"
             android:textSize="18sp"
-            android:layout_toRightOf="@+id/user_avatar"
-            android:layout_marginLeft="8dp" />
+            android:layout_toEndOf="@+id/user_avatar"
+            android:layout_marginStart="8dp" />
         <TextView
             android:id="@+id/subtitle"
             android:layout_width="match_parent"
@@ -53,16 +49,13 @@
             android:gravity="top"
             android:textSize="16sp"
             android:layout_below="@+id/title"
-            android:layout_toRightOf="@+id/user_avatar"
-            android:layout_marginLeft="8dp" />
+            android:layout_toEndOf="@+id/user_avatar"
+            android:layout_marginStart="8dp" />
     </RelativeLayout>
     <RelativeLayout
         android:id="@+id/frame_25"
         android:layout_width="374dp"
         android:layout_height="520dp"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:layout_below="@+id/horizontal_"
         android:layout_marginTop="30dp"
         android:background="@drawable/frame_25">
         <TextView
@@ -80,8 +73,8 @@
             android:id="@+id/rectangle_2"
             android:layout_width="157.9dp"
             android:layout_height="215dp"
-            android:layout_alignParentLeft="true"
-            android:layout_marginLeft="18dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="18dp"
             android:layout_below="@+id/date_15_10_"
             android:layout_marginTop="15dp"
             android:background="@drawable/rectangle_2">
@@ -89,8 +82,8 @@
                 android:id="@+id/groupdetect"
                 android:layout_width="29dp"
                 android:layout_height="29dp"
-                android:layout_alignParentLeft="true"
-                android:layout_marginLeft="13dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="13dp"
                 android:layout_alignParentTop="true"
                 android:layout_marginTop="13dp"
                 android:src="@drawable/groupdetected" />
@@ -98,8 +91,8 @@
                 android:id="@+id/the_number_"
                 android:layout_width="103dp"
                 android:layout_height="84dp"
-                android:layout_toRightOf="@+id/groupdetect"
-                android:layout_marginLeft="5dp"
+                android:layout_toEndOf="@+id/groupdetect"
+                android:layout_marginStart="5dp"
                 android:layout_alignParentTop="true"
                 android:layout_marginTop="7dp"
                 android:text="@string/the_number_"
@@ -134,8 +127,8 @@
             android:id="@+id/rectangle_3"
             android:layout_width="157.9dp"
             android:layout_height="215dp"
-            android:layout_alignParentRight="true"
-            android:layout_marginRight="18dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="18dp"
             android:layout_below="@+id/date_15_10_"
             android:layout_marginTop="15dp"
             android:background="@drawable/rectangle_3">
@@ -189,8 +182,8 @@
             android:id="@+id/rectangle_4"
             android:layout_width="157.9dp"
             android:layout_height="215dp"
-            android:layout_alignParentLeft="true"
-            android:layout_marginLeft="18dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="18dp"
             android:layout_below="@+id/rectangle_2"
             android:layout_marginTop="12dp"
             android:background="@drawable/rectangle_4">
@@ -198,8 +191,8 @@
                 android:id="@+id/durationflag"
                 android:layout_width="29dp"
                 android:layout_height="29dp"
-                android:layout_alignParentLeft="true"
-                android:layout_marginLeft="13dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="13dp"
                 android:layout_alignParentTop="true"
                 android:layout_marginTop="20dp"
                 android:src="@drawable/flag" />
@@ -207,8 +200,8 @@
                 android:id="@+id/tripduration"
                 android:layout_width="103dp"
                 android:layout_height="84dp"
-                android:layout_toRightOf="@+id/durationflag"
-                android:layout_marginLeft="5dp"
+                android:layout_toEndOf="@+id/durationflag"
+                android:layout_marginStart="5dp"
                 android:layout_alignParentTop="true"
                 android:layout_marginTop="20dp"
                 android:text="@string/trip_duration"
@@ -244,8 +237,8 @@
             android:id="@+id/rectangle_5"
             android:layout_width="157.9dp"
             android:layout_height="215dp"
-            android:layout_alignParentRight="true"
-            android:layout_marginRight="18dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="18dp"
             android:layout_below="@+id/rectangle_3"
             android:layout_marginTop="12dp"
             android:background="@drawable/rectangle_5">
@@ -253,8 +246,8 @@
                 android:id="@+id/like"
                 android:layout_width="29dp"
                 android:layout_height="29dp"
-                android:layout_alignParentLeft="true"
-                android:layout_marginLeft="13dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="13dp"
                 android:layout_alignParentTop="true"
                 android:layout_marginTop="20dp"
                 android:src="@drawable/like" />
@@ -262,8 +255,8 @@
                 android:id="@+id/Helpfull"
                 android:layout_width="103dp"
                 android:layout_height="84dp"
-                android:layout_toRightOf="@+id/like"
-                android:layout_marginLeft="5dp"
+                android:layout_toEndOf="@+id/like"
+                android:layout_marginStart="5dp"
                 android:layout_alignParentTop="true"
                 android:layout_marginTop="20dp"
                 android:text="@string/helpfull"
@@ -300,52 +293,41 @@
         android:id="@+id/frame_26"
         android:layout_width="326dp"
         android:layout_height="47dp"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@+id/frame_25"
-        android:layout_marginTop="80dp"
-        android:layout_centerVertical="true">
-
-
-
+        android:layout_marginTop="80dp">
         <RelativeLayout
             android:id="@+id/tab_bar"
             android:layout_width="306dp"
             android:layout_height="43dp"
             android:background="@drawable/tab_bar"
             android:layout_centerHorizontal="true"
-            android:clipToOutline="true">
+            >
 
-            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            <RelativeLayout
                 android:id="@+id/iconhome"
                 android:layout_width="24dp"
                 android:layout_height="24dp"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentTop="true"
-                android:layout_marginLeft="30dp"
-                android:layout_marginTop="13dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="30dp"
+                android:layout_centerVertical="true"
                 android:background="@drawable/home"
-                android:clipToOutline="true" />
-
-            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                />
+            <RelativeLayout
                 android:id="@+id/iconsetting"
                 android:layout_width="24dp"
                 android:layout_height="24dp"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentRight="true"
-                android:layout_marginTop="13dp"
-                android:layout_marginRight="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="30dp"
+                android:layout_centerVertical="true"
                 android:background="@drawable/setting"
-                android:clipToOutline="true" />
-
-            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                />
+            <RelativeLayout
                 android:id="@+id/iconlocation"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="13dp"
-                android:background="@drawable/location"
-                android:clipToOutline="true" />
+                android:layout_centerVertical="true"
+                android:background="@drawable/location"  />
         </RelativeLayout>
     </RelativeLayout>
 </LinearLayout>

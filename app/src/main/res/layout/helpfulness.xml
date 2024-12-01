@@ -14,16 +14,13 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:gravity="center"
-        android:text="@string/banner_your_dectected"
-        android:textAppearance="@style/banner_your_dectected"
+        android:text="@string/Your_Detection"
+        android:textAppearance="@style/banner_logi"
         android:textSize="32sp"/>
     <RelativeLayout
         android:id="@+id/horizontal_"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_alignParentTop="true"
-        android:layout_below="@+id/banner_logi"
         android:layout_marginTop="20dp"
         android:src="@drawable/dashboard_m">
         <ImageView
@@ -40,8 +37,8 @@
             android:text="@string/title"
             android:textAppearance="@style/title"
             android:textSize="18sp"
-            android:layout_toRightOf="@+id/user_avatar"
-            android:layout_marginLeft="8dp" />
+            android:layout_toEndOf="@+id/user_avatar"
+            android:layout_marginStart="8dp" />
         <TextView
             android:id="@+id/subtitle"
             android:layout_width="wrap_content"
@@ -53,8 +50,8 @@
             android:gravity="top"
             android:textSize="16sp"
             android:layout_below="@+id/title"
-            android:layout_toRightOf="@+id/user_avatar"
-            android:layout_marginLeft="8dp" />
+            android:layout_toEndOf="@+id/user_avatar"
+            android:layout_marginStart="8dp" />
         <ImageView
             android:id="@+id/arrow_back"
             android:layout_width="24dp"
@@ -68,9 +65,6 @@
         android:id="@+id/frame_25"
         android:layout_width="374dp"
         android:layout_height="520dp"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:layout_below="@+id/horizontal_"
         android:layout_marginTop="30dp"
         android:background="@drawable/frame_25">
         <TextView
@@ -91,80 +85,69 @@
             android:layout_centerHorizontal="true"
             android:layout_below="@+id/date_15_10_"
             android:layout_marginTop="10dp"
-            android:background="@drawable/rectangle_of_your_detection">
-            <TextView
-                android:id="@+id/the_number_2"
-                android:layout_width="match_parent"
+            android:background="@drawable/yourhelpfulness">
+            <RelativeLayout
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
-                android:layout_marginTop="7dp"
-                android:gravity="center_horizontal|top"
-                android:text="@string/the_number_2_2"
-                android:textAppearance="@style/the_number_2"
-                android:textSize="16sp" />
+                android:id="@+id/Helpfull"
+                android:layout_centerHorizontal="true"
+                >
+                <ImageView
+                    android:id="@+id/like"
+                    android:layout_width="29dp"
+                    android:layout_height="29dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="13dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/like" />
+                <TextView
+                    android:id="@+id/helpfull"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/like"
+                    android:layout_marginStart="5dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/helpfull"
+                    android:textAppearance="@style/helpfull"
+                    android:gravity="top"
+                    android:textSize="17sp" />
+            </RelativeLayout>
             <TextView
-                android:id="@+id/some_id_2"
+                android:id="@+id/some_id_4"
                 android:layout_width="wrap_content"
                 android:layout_height="95dp"
                 android:layout_centerHorizontal="true"
-                android:layout_below="@+id/the_number_2"
+                android:layout_below="@+id/Helpfull"
                 android:layout_marginTop="-16dp"
-                android:text="@string/some_id_2"
-                android:textAppearance="@style/some_id_2"
+                android:text="@string/some_id_4"
+                android:textAppearance="@style/some_id_4"
                 android:gravity="center_horizontal|top"
-                android:textSize="63sp" />
+                android:textSize="63sp"
+                />
             <TextView
-                android:id="@+id/potholes2"
-                android:layout_width="88dp"
-                android:layout_height="25dp"
+                android:id="@+id/numpeople"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
-                android:layout_below="@+id/some_id_2"
-                android:layout_marginTop="-30dp"
-                android:text="@string/potholes"
-                android:textAppearance="@style/the_number_2"
+                android:layout_below="@+id/some_id_4"
+                android:layout_marginTop="-25dp"
+                android:text="@string/numpeople"
+                android:textAppearance="@style/helpfull"
                 android:gravity="center_horizontal|top"
-                android:textSize="16sp" />
+                android:textSize="16sp"
+                />
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/recyclerview"
-                android:layout_below="@id/potholes2"
+                android:layout_below="@id/numpeople"
                 android:layout_marginTop="5dp"
                 android:layout_width="256dp"
-                android:layout_height="252dp"
+                android:layout_height="290dp"
                 android:layout_centerHorizontal="true"
                 android:clipToOutline="true"
                 />
-<!--            sửa cái nút-->
-            <RelativeLayout
-                android:layout_width="200dp"
-                android:layout_height="40dp"
-                android:layout_below="@id/recyclerview"
-                android:layout_marginTop="5dp"
-                android:layout_centerHorizontal="true">
-                <RelativeLayout
-                    android:id="@+id/rectangle_for_button"
-                    android:layout_width="200dp"
-                    android:layout_height="40dp"
-                    android:background="@drawable/rectangle_for_big_btn_add"
-                    />
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/add"
-                    android:textSize="22sp"
-                    android:textAppearance="@style/add_yourdetection"
-                    android:layout_centerVertical="true"
-                    android:layout_centerHorizontal="true"
-                    />
-                <Button
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:id="@+id/button_add_your_detection"
-                    android:visibility="invisible"/>
-            </RelativeLayout>
         </RelativeLayout>
-
-
-
     </RelativeLayout>
     <RelativeLayout
         android:id="@+id/frame_26"
@@ -210,7 +193,6 @@
                 android:layout_marginTop="13dp"
                 android:background="@drawable/location"
                 android:clipToOutline="true" />
-
         </RelativeLayout>
     </RelativeLayout>
 </LinearLayout>

@@ -1,19 +1,14 @@
 package com.example.doan;
-
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-import android.widget.RatingBar;
 import android.widget.TextView;
-
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
-
 import java.util.ArrayList;
-
 public class streetlistAdapter extends RecyclerView.Adapter<streetlistAdapter.ViewHolder> {
     private Context context;
     private ArrayList<streetlist> liststreetlists = new ArrayList<>();
@@ -43,11 +38,9 @@ public class streetlistAdapter extends RecyclerView.Adapter<streetlistAdapter.Vi
     public class ViewHolder extends RecyclerView.ViewHolder {
         private ImageView ImageView;
         private TextView textView;
-        private RatingBar ratingbar;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
-
             this.ImageView = (ImageView) itemView.findViewById(R.id.flag_img);
             this.textView = (TextView) itemView.findViewById(R.id.tv_street);
 

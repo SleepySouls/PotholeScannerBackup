@@ -67,4 +67,23 @@
     <string name="time_resend_code">Resend code in 00:59</string>
     <!--    your detection-->
     <string name="street_name">Street name</string>
+    <!--    detection near you-->
+    <string name="Pothole_Detection">Pothole Detection</string>
+    <string name="Distance_in">Distance in</string>
+    <string name="meters">m</string>
+    <!--    your helpfulness-->
+    <string name="Your_Detection">Your Detection</string>
+    <!--    language-->
+    <string name="banner_language">Language</string>
+    <string name="choose_lang">Choose your language</string>
+    <string name="english">English</string>
+    <string name="vietnam">Vietnamese</string>
+    <string name="your_langua">Your language preference can be\nchanged at any time in Settings</string>
+    <string name="save">SAVE</string>
+    <string name="you_should">You should change your password\nperiodically to protect your account.</string>
+    <!--    change pass-->
+    <string name="banner_changepass">Change Password</string>
+    <string name="enter_old_password">Enter Old Password</string>
+    <string name="enter_new_password">Enter New Password</string>
+    <string name="re_enter_new_password">Re-enter New Password</string>
 </resources>

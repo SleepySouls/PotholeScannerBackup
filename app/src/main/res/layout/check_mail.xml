@@ -47,6 +47,7 @@
             android:layout_width="58dp"
             android:layout_height="58dp"
             android:background="@drawable/rectangle_otp"
+            android:inputType="number"
             />
         <EditText
             android:id="@+id/rectangle_otp_2"
@@ -55,6 +56,7 @@
             android:background="@drawable/rectangle_otp"
             android:layout_toEndOf="@id/rectangle_otp_1"
             android:layout_marginStart="22dp"
+            android:inputType="number"
             />
         <EditText
             android:id="@+id/rectangle_otp_3"
@@ -63,6 +65,7 @@
             android:background="@drawable/rectangle_otp"
             android:layout_toEndOf="@id/rectangle_otp_2"
             android:layout_marginStart="22dp"
+            android:inputType="number"
             />
         <EditText
             android:id="@+id/rectangle_otp_4"
@@ -71,6 +74,7 @@
             android:background="@drawable/rectangle_otp"
             android:layout_toEndOf="@id/rectangle_otp_3"
             android:layout_marginStart="22dp"
+            android:inputType="number"
             />
         <EditText
             android:id="@+id/rectangle_otp_5"
@@ -79,6 +83,7 @@
             android:background="@drawable/rectangle_otp"
             android:layout_toEndOf="@id/rectangle_otp_4"
             android:layout_marginStart="22dp"
+            android:inputType="number"
             />
     </RelativeLayout>
     <Button
